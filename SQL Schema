@@ -1,0 +1,32 @@
+-- users table
+CREATE TABLE IF NOT EXISTS users (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  username TEXT UNIQUE NOT NULL,
+  password TEXT NOT NULL,
+  age INTEGER NOT NULL,
+  gender TEXT,
+  height_cm REAL,
+  weight_kg REAL
+);
+
+-- foods table
+CREATE TABLE IF NOT EXISTS foods (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL,
+  calories_per_100g REAL NOT NULL,
+  protein_per_100g REAL,
+  carbs_per_100g REAL,
+  fat_per_100g REAL,
+  category TEXT
+);
+
+-- diary entries (user food logs)
+CREATE TABLE IF NOT EXISTS diary (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  user_id INTEGER NOT NULL,
+  food_id INTEGER NOT NULL,
+  grams REAL NOT NULL,
+  entry_date TEXT NOT NULL,
+  FOREIGN KEY(user_id) REFERENCES users(id),
+  FOREIGN KEY(food_id) REFERENCES foods(id)
+);
