@@ -1,0 +1,28 @@
+SmartCal/
+├─ README.md
+├─ lib/                    # (optional) external jars if needed (sqlite-jdbc)
+├─ db/
+│  └─ smartcal.db          # created by the app if missing
+└─ src/
+   ├─ Main.java
+   ├─ gui/
+   │  ├─ LoginFrame.java
+   │  ├─ MainDashboard.java
+   │  ├─ AddFoodDialog.java
+   │  └─ FoodTableModel.java
+   ├─ model/
+   │  ├─ User.java
+   │  ├─ NutritionProfile.java
+   │  ├─ FoodItem.java
+   │  ├─ Fruit.java
+   │  └─ Dairy.java
+   ├─ dao/
+   │  ├─ DBConnection.java
+   │  ├─ UserDAO.java
+   │  └─ FoodDAO.java
+   ├─ util/
+   │  ├─ LoaderThread.java
+   │  ├─ Validator.java
+   │  ├─ GenericPrinter.java
+   │  └─ exceptions/
+   │     └─ SmartCalException.java
