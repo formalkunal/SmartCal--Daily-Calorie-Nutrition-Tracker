@@ -1,0 +1,3 @@
+Input: Calories = 300 → Output: Healthy Food
+Input: Calories = 700 → Output: High Calorie Food
+Invalid Input → Form validation triggered
