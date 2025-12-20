@@ -1,0 +1,11 @@
+<web-app>
+    <servlet>
+        <servlet-name>CalorieServlet</servlet-name>
+        <servlet-class>com.guvi.calorie.CalorieServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CalorieServlet</servlet-name>
+        <url-pattern>/calorie</url-pattern>
+    </servlet-mapping>
+</web-app>
