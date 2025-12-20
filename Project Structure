@@ -1,0 +1,15 @@
+DailyCalorieTracker/
+│
+├── src/main/java/
+│   └── com/guvi/calorie/
+│       ├── CalorieServlet.java
+│       ├── Food.java
+│       ├── CalorieCalculator.java
+│
+├── src/main/webapp/
+│   ├── index.jsp
+│   ├── result.jsp
+│   ├── style.css
+│
+└── WEB-INF/
+    └── web.xml
